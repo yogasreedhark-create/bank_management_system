@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient">
+
+<!-- Top Navigation -->
+<nav class="top-nav">
+    <h2 class="brand">SecureBank</h2>
+    <div class="nav-links">
+        <a href="transactions.html">Transactions</a>
+        <a href="faq.html">FAQ</a>
+        <a onclick="logout()" class="logout">Logout</a>
+    </div>
+</nav>
+
+<!-- Main Container -->
+<div class="dashboard-container">
+
+    <!-- Balance Card -->
+    <div class="balance-card">
+        <h3>Hello, <span id="user-name"></span> 👋</h3>
+        <p class="balance-label">Current Balance</p>
+        <h1 class="balance-amount">₹<span id="balance"></span></h1>
+    </div>
+
+    <!-- Action Boxes -->
+    <div class="action-grid">
+
+        <a href="deposit.html" class="action-card add">
+            <h2>➕ Add Money</h2>
+            <p>Deposit money into your account</p>
+        </a>
+
+        <a href="withdraw.html" class="action-card withdraw">
+            <h2>💸 Withdraw</h2>
+            <p>Withdraw funds instantly</p>
+        </a>
+
+        <a href="transfer.html" class="action-card transfer">
+            <h2>🔁 Transfer</h2>
+            <p>Send money to another user</p>
+        </a>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
